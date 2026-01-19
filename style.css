@@ -266,22 +266,13 @@ body {
    PROFILE IMAGE (SMART CROP)
    ========================= */
 .profile-img {
-    width: 160px;
-    height: 160px;
+    width: 240px;
+    height: 240px;
 
-    /* This creates the circular frame */
     border-radius: 50%;
-
-    /* This crops the image automatically */
     object-fit: cover;
+    object-position: center 25%;
 
-    /* THIS controls which part is visible */
-    object-position: center top;
-
-    /* Professional look */
-    border: 4px solid rgba(255, 255, 255, 0.75);
-    margin-bottom: 25px;
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
 }
-
-
-
