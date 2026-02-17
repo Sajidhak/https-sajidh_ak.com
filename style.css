@@ -146,10 +146,14 @@ body {
 }
 
 .hero-text p {
-  margin: 25px 0 50px 0;  /* Extra bottom space */
-  max-width: 500px;
+  margin-top: 25px;
+  margin-bottom: 60px;   /* Increased space before button */
+  max-width: 520px;
   color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
+
 
 
 .btn {
@@ -164,13 +168,17 @@ body {
 
 .hero-name {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 3px;
-  font-weight: 600;
-  color: #2563eb;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+  font-size: 2.8rem;          /* Bigger */
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  line-height: 1.1;
+
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 
 .hero-image {
   margin-left: 40px;
