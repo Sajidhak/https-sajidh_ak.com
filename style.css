@@ -146,10 +146,11 @@ body {
 }
 
 .hero-text p {
-  margin: 20px 0;
+  margin: 25px 0 50px 0;  /* Extra bottom space */
   max-width: 500px;
   color: #475569;
 }
+
 
 .btn {
   padding: 14px 35px;
@@ -169,6 +170,10 @@ body {
   color: #2563eb;
   margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+.hero-image {
+  margin-left: 40px;
 }
 
 
