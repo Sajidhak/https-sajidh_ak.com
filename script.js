@@ -1,14 +1,12 @@
-// Scroll reveal animation
+// Reveal animation
 const reveals = document.querySelectorAll(".reveal");
 
 function revealOnScroll() {
-  reveals.forEach((element) => {
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
-    const elementTop = element.getBoundingClientRect().top;
-    const revealPoint = 100;
-
-    if (elementTop < windowHeight - revealPoint) {
-      element.classList.add("active");
+    if (top < windowHeight - 100) {
+      el.classList.add("active");
     }
   });
 }
