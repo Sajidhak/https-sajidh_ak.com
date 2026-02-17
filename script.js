@@ -1,22 +1,16 @@
-// Fade-in on scroll
-const faders = document.querySelectorAll(".fade-in");
+// Scroll reveal animation
+const reveals = document.querySelectorAll(".reveal");
 
-const appearOptions = {
-    threshold: 0.2
-};
+function revealOnScroll() {
+  reveals.forEach((element) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = element.getBoundingClientRect().top;
+    const revealPoint = 100;
 
-const appearOnScroll = new IntersectionObserver(function (
-    entries,
-    observer
-) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("show");
-        observer.unobserve(entry.target);
-    });
-},
-appearOptions);
+    if (elementTop < windowHeight - revealPoint) {
+      element.classList.add("active");
+    }
+  });
+}
 
-faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-});
+window.addEventListener("scroll", revealOnScroll);
