@@ -279,3 +279,54 @@ footer {
   padding: 40px 0;
   font-size: 0.9rem;
 }
+/* INSIGHT SECTION */
+.insight-container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(20px);
+  padding: 60px;
+  border-radius: 25px;
+}
+
+.insight-image img {
+  width: 450px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+  transition: 0.5s;
+}
+
+.insight-image img:hover {
+  transform: scale(1.03);
+}
+
+.insight-content {
+  max-width: 500px;
+}
+
+.insight-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.insight-text {
+  font-family: 'Sora', sans-serif;
+  line-height: 1.8;
+  color: #475569;
+  font-size: 1.05rem;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+  .insight-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .insight-image img {
+    width: 100%;
+  }
+}
